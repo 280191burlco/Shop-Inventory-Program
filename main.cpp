@@ -5,7 +5,7 @@
 #include <functional> //required for function selection
 using namespace std;
 
-/* 
+/*
 How to use:
 Run the program
 Select what part you are looking for
@@ -189,7 +189,7 @@ void resistorStockDisplay() {
 
         if (rOption == 1) {
             int index, amount;
-            cout << "Enter resistor number to add: ";
+            cout << "Enter resistor ID number to add: ";
             cin >> index;
             cout << "Enter amount to add: ";
             cin >> amount;
@@ -220,7 +220,7 @@ void resistorStockDisplay() {
             }
         } else if (rOption == 2) {
             int index, amount;
-            cout << "Enter resistor number to remove: ";
+            cout << "Enter resistor ID number to remove: ";
             cin >> index;
             cout << "Enter amount to remove: ";
             cin >> amount;
@@ -282,7 +282,7 @@ while(true) {
         }
     if (mOption == 1) {
         int index, amount;
-        cout << "Enter Inductor Number to add: ";
+        cout << "Enter Inductor ID Number to add: ";
         cin >> index;
         cout << "Enter amount you are adding: ";
         cin >> amount;
@@ -299,7 +299,7 @@ while(true) {
     }
     } else if (mOption ==2) {
     int index, amount;
-    cout << "Enter Inductor to remove: ";
+    cout << "Enter Inductor ID Number to remove: ";
     cin >> index;
     cout << "Enter amount to remove: ";
     cin >> amount;
@@ -349,7 +349,7 @@ while(true) {
         }
     if (cOption == 1) {
         int index, amount;
-        cout << "Enter Capacitor Number to add: ";
+        cout << "Enter Capacitor ID Number to add: ";
         cin >> index;
         cout << "Enter amount you are adding: ";
         cin >> amount;
@@ -366,7 +366,7 @@ while(true) {
     }
     } else if (cOption ==2) {
     int index, amount;
-    cout << "Enter capacitor number to remove: ";
+    cout << "Enter capacitor ID number to remove: ";
     cin >> index;
     cout << "Enter amount to remove: ";
     cin >> amount;
@@ -416,7 +416,7 @@ while(true) {
         }
     if (pOption == 1) {
         int index, amount;
-        cout << "Enter Potentiometer number to add: ";
+        cout << "Enter Potentiometer ID number to add: ";
         cin >> index;
         cout << "Enter amount you are adding: ";
         cin >> amount;
@@ -429,11 +429,11 @@ while(true) {
              << pstock[index - 1]
              << "\n\n";
     } else {
-    cout << "Invalid Misc Number";
+    cout << "Invalid Potentiometer Number";
     }
     } else if (pOption ==2) {
     int index, amount;
-    cout << "Enter Potentiometer to remove: ";
+    cout << "Enter Potentiometer ID number to remove: ";
     cin >> index;
     cout << "Enter amount to remove: ";
     cin >> amount;
@@ -485,7 +485,7 @@ void icStockDisplay() {
 
         if (icOption == 1) {
             int index, amount;
-            cout << "Enter IC Chip number to add: ";
+            cout << "Enter IC Chip ID number to add: ";
             cin >> index;
             cout << "Enter amount to add: ";
             cin >> amount;
@@ -516,7 +516,7 @@ void icStockDisplay() {
             }
         } else if (icOption == 2) {
             int index, amount;
-            cout << "Enter IC Chip number to remove: ";
+            cout << "Enter IC Chip ID number to remove: ";
             cin >> index;
             cout << "Enter amount to remove: ";
             cin >> amount;
@@ -580,7 +580,7 @@ while (true) {
 
         if (bOption == 1) {
             int index, amount;
-            cout << "Enter Battery number to add: ";
+            cout << "Enter Battery ID number to add: ";
             cin >> index;
             cout << "Enter amount to add: ";
             cin >> amount;
@@ -611,7 +611,7 @@ while (true) {
             }
         } else if (bOption == 2) {
             int index, amount;
-            cout << "Enter battery number to remove: ";
+            cout << "Enter battery ID number to remove: ";
             cin >> index;
             cout << "Enter amount to remove: ";
             cin >> amount;
@@ -675,7 +675,7 @@ while (true) {
 
         if (bsOption == 1) {
             int index, amount;
-            cout << "Enter Button or Switch number to add: ";
+            cout << "Enter Button or Switch ID number to add: ";
             cin >> index;
             cout << "Enter amount to add: ";
             cin >> amount;
@@ -706,7 +706,7 @@ while (true) {
             }
         } else if (bsOption == 2) {
             int index, amount;
-            cout << "Enter Button or Switch number to remove: ";
+            cout << "Enter Button or Switch ID number to remove: ";
             cin >> index;
             cout << "Enter amount to remove: ";
             cin >> amount;
@@ -770,7 +770,7 @@ while (true) {
 
         if (lOption == 1) {
             int index, amount;
-            cout << "Enter LED number to add: ";
+            cout << "Enter LED ID number to add: ";
             cin >> index;
             cout << "Enter amount to add: ";
             cin >> amount;
@@ -801,7 +801,7 @@ while (true) {
             }
         } else if (lOption == 2) {
             int index, amount;
-            cout << "Enter LED number to remove: ";
+            cout << "Enter LED ID number to remove: ";
             cin >> index;
             cout << "Enter amount to remove: ";
             cin >> amount;
