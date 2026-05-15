@@ -5,6 +5,16 @@
 #include <functional> //required for function selection
 using namespace std;
 
+/* 
+How to use:
+Run the program
+Select what part you are looking for
+Select adding/subtracting
+Select corresponding part # (eg 1 ohm = 1 so input should be 1)
+Enter how many you are adding/removing
+Re-loop for the part or return to main menu
+Rinse and repeat for all of the other parts, or end the program*/
+
 //fucntion list to be called
 void intro (int& invChoice);
 void resistorStockDisplay();
@@ -129,7 +139,7 @@ void intro (int& invChoice) { //List of functions to select from
 
     while (true) { //Begin the selection loop
         cout << "\n1. Resistor Inventory\n"
-                "2. Misc Item Inventory\n"
+                "2. Inductor Inventory\n"
                 "3. Capacitor Inventory\n"
                 "4. Potentiometer Inventory\n"
                 "5. IC Chip Inventory\n"
@@ -253,13 +263,13 @@ void resistorStockDisplay() {
 
 void miscStockDisplay() {
 while(true) {
-    cout << "Current Misc Items Stock:\n\n";
+    cout << "Current Inductor Stock:\n\n";
 
     for (int i = 0; i < misc.size(); i++) {
         cout << i + 1 << ". " << misc[i] << ": " << mstock[i] << endl;
     }
-    cout << "\n1. Add Misc Item\n"
-            "2. Remove Misc Item\n"
+    cout << "\n1. Add Inductor\n"
+            "2. Remove Inductor\n"
             "3. Return to menu\n\n"
             "Input: ";
     int mOption;
@@ -272,7 +282,7 @@ while(true) {
         }
     if (mOption == 1) {
         int index, amount;
-        cout << "Enter Misc Number to add: ";
+        cout << "Enter Inductor Number to add: ";
         cin >> index;
         cout << "Enter amount you are adding: ";
         cin >> amount;
@@ -285,11 +295,11 @@ while(true) {
              << mstock[index - 1]
              << "\n\n";
     } else {
-    cout << "Invalid Misc Number";
+    cout << "Invalid Inductor Number";
     }
     } else if (mOption ==2) {
     int index, amount;
-    cout << "Enter misc number to remove: ";
+    cout << "Enter Inductor to remove: ";
     cin >> index;
     cout << "Enter amount to remove: ";
     cin >> amount;
@@ -307,7 +317,7 @@ while(true) {
         cout << "Not enough Stock.\n\n";
         }
     } else {
-    cout << "Invalid Misc Selection.\n\n";
+    cout << "Invalid Inductor Selection.\n\n";
     }
     } else if (mOption == 3) {
     cout << "Returning to main menu...\n\n";
